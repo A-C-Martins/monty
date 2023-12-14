@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 	while (line_content > 0)
 	{
 		line_inf = NULL;
-		line_content = getline(&line_inf, &size, file_handle);
+		line_content = (getline(&line_inf, &size, file_handle));
 		global.monty_line = line_inf;
 		lnum++;
 
